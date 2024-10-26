@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a5e51ce083.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+         <nav>
+              <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-duotone fa-solid fa-square-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Fethiya</span><br>Abdurehim from Ethiopia</h1>
+         </div>
+       </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="row">
+        <div class="about-col-1">
+             <img src="image/about_photo.jpg">
+        </div>
+        <div class="about-col-2">
+           <h1 class="sub-title">About Me</h1>
+           <p>Hi there! I'm Fethiya Abdurehim, a passionate web designer...</p>
+           <div class="tab-titles">
+               <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+               <p class="tab-links" onclick="opentab('experience')">Experience</p>
+               <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                  <li><span>Web Development</span><br>Web App Development</li>
+                  <li><span>App Development</span><br>Building Android/iOS apps</li>
+                </ul>
+           </div>
+           <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2024-current</span><br>UI/UX Design Training at AAU</li>
+                  <li><span>2019-2024</span><br>Web App Developer</li>
+                  <li><span>2016-2019</span><br>Building Android/iOS apps</li>
+                </ul>
+           </div>
+           <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2019</span><br>Designing Web/App interfaces</li>
+                  <li><span>2022</span><br>Web App Development</li>
+                  <li><span>2024</span><br>Building Android/iOS apps</li>
+                </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+             <h2>Web Design</h2>
+             <p>Web design focuses on creating visually appealing...</p>
+             <a href="https://www.simplilearn.com/what-is-web-designing-article">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>UI/UX design enhances digital products by improving the interface...</p>
+            <a href="https://www.coursera.org/articles/ui-vs-ux-design">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p>App design involves creating mobile applications...</p>
+          <a href="https://dribbble.com/tags/mobile-app-design">Learn more</a>
+       </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/social_media.jpg">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects users to share content...</p>
+              <i class="fa-regular fa-hashtag"></i>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/music_app.jpg">
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>The app lets users stream and organize music...</p>
+              <i class="fa-solid fa-music"></i>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/online_shopping.jpg">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>The app allows users to browse and purchase products...</p>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>fethiyaabdurehim7@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>0934108842</p>
+            <div class="social-icons">
+                <a href="https://github.com/fetutechtamer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fethiya-abdurehim-3a0248331"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://youtube.com/@fethiyaabdurehim-f3s"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/fetuarmygirl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="photo/my-cv.pdf" download class="btn btn2">Download CV</a>                              
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Fethiya. Made With <i class="fa-solid fa-heart"></i> Love</p>
+      </div>
+    </div>
+</body>
+</html>
